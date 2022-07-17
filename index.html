@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guitar Tool</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎸</text></svg>">
+  <script src="js/gtool.js"></script>
+  <style>
+    body {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    #log {
+      margin-top: 1em;
+      font-family: monospace;
+      white-space: pre;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #333;
+        color: #eee;
+      }
+      a {
+        color: #769dff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Guitar Tool</h1>
+  Key: <select id="keySelector"></select>
+  Scale: <select id="scaleSelector">
+    <option value="Major">Major</option>
+    <option value="Minor">Minor</option>
+    <option value="PentatonicMajor">Pentatonic Major</option>
+    <option value="PentatonicMinor">Pentatonic Minor</option>
+    <option value="PentatonicBlues">Pentatonic Blues</option>
+    <option value="Dorian">Dorian</option>
+    <option value="Phrygian">Phrygian</option>
+    <option value="Lydian">Lydian</option>
+    <option value="Mixolydian">Mixolydian</option>
+    <option value="Locrian">Locrian</option>
+  </select>
+  <div id="log"></div>
+</body>
+</html>
